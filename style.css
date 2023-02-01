@@ -12,9 +12,18 @@ body {
 }
 
 .container {
-    margin: 0 2rem;
+    max-width: 50%;
+    margin: 0 auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 95%;
+    }
 }
 
 header {
@@ -27,6 +36,10 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+input {
+    width: 100%;
 }
 
 form input,
